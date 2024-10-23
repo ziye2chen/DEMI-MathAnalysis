@@ -1,0 +1,20 @@
+Number,Problem,Solution
+692,Find the discontinuities of the following function and analyze the nature of these points. $y=\sqrt{\frac{1-\cos \pi x}{4-x^2}}$ ,$x = \frac{1}{\pi}$ is a discontinuity of infinite type.
+674_7,Use the $\epsilon-\delta$ definition to prove the continuity of the following function: $\cos x$,"For $f(x) = \cos x$:
+$$ |\cos x - \cos x_0| = \frac{1}{2} \left| \sin \left( x - x_0 \right) \right| $$
+Given $\epsilon > 0$, let $\delta = \epsilon$. Then, when $|x - x_0| < \delta$, we have:
+$$|\cos x - \cos x_0| < \epsilon $$"
+691,Find the discontinuities of the following function and analyze the nature of these points. $y=\frac{x}{\sin x}$,"Since $\lim_{{x \to 0}} y = 0$, $\lim_{{\delta \to 0}} \sup_{{|x - 0| < \delta}} |x_0 - 0| = 0$."
+667,"Given $f(x) = \frac{1}{x}$, $\epsilon = 0.001$, and the values $x_0 = 0.1, 0.01, 0.001, \dots$, find the largest possible positive number $\delta = \delta(\epsilon, x_0)$ such that:
+$$ |x - x_0| < \delta \implies |f(x) - f(x_0)| < \epsilon $$
+Can we find such a $\delta > 0$ for the given $\epsilon = 0.001$, such that it works for all $x_0$ in the interval $(0, 1)$? In other words, is there a universal $\delta$ such that for any $x_0 \in (0, 1)$, $|x - x_0| < \delta$ implies $|f(x) - f(x_0)| < \epsilon$?
+","Since $\lim_{{x \to +0}} f(x) = +\infty$, there does not exist a universal $\delta > 0$, no matter how small. For $x_0 = 0.1$, we have $\delta = 0.01$, but for $x_0 = 0.001$, we only have $\delta = 0.001$, which does not work for $x_0 = 0.1$. Thus, there is no universal $\delta$."
+666,Use the $\epsilon-\delta$ definition to prove that the function $f(x) = x^2$ is continuous at $x = 5$.,"Suppose $|x - 5| < \delta$. Then, $x < 5 + \delta$. Thus, $x^2 < (5 + \delta)^2 = 25 + 10 \delta + \delta^2$. To make $x^2 - \epsilon < 0$, we need: $\delta^2 + 10 \delta + 25 < \epsilon$. Solving the quadratic inequality gives: $\delta < -5 + \sqrt{epsilon}$. Thus, we take $\delta = \min(\epsilon, 10)$."
+688,Find the discontinuities of the following function and analyze the nature of these points. $y=\frac{1+x}{1+x^3}$ ,$x = -1$ is a discontinuity of infinite type.
+700,Find the discontinuities of the following function and analyze the nature of these points. $y=\frac{1}{1-e^{\frac{x}{1-x}}}$ ,$x = 1$ is a discontinuity of infinite type.
+669,"For some number $\epsilon > 0$, if there exists a corresponding number $\delta = \delta(\epsilon, x_0) > 0$ such that whenever $|x - x_0| < \delta$, it follows that $|f(x) - f(x_0)| < \epsilon$, then:
+If:
+(1) The numbers $\epsilon$ form a finite set?
+(2) The numbers $\epsilon$ form an infinite set of fractions $\epsilon = \frac{1}{2^n}$ ($n = 1, 2, \dots$), can we conclude that the function $f(x)$ is continuous at $x_0$?","(1) No, because the method used to construct $\delta$ is based on the size of $\epsilon$. If $\epsilon$ is finite, it cannot be made arbitrarily small. Therefore, it is impossible to satisfy $|f(x) - f(x_0)| < \epsilon$.
+(2) Yes, because the function $f(x)$ is defined on a finite interval $(a, b)$, therefore, $\epsilon$ can be made arbitrarily small. Thus, we can always find a number $\delta = \delta(\epsilon, x_0) > 0$ such that whenever $|x - x_0| < \delta$, it follows that $|f(x) - f(x_0)| < \epsilon$."
+690,Find the discontinuities of the following function and analyze the nature of these points. $y=\frac{\frac{1}{x}-\frac{1}{x+1}}{\frac{1}{x-1}-\frac{1}{x}}$,$x = 0$ and $x = 1$ are both infinite discontinuities.
