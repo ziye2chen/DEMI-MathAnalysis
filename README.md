@@ -69,14 +69,15 @@ The benchmark and pretraining splits are curated to ensure that the testing prob
 
 ## How to Use the Dataset
 
-1. **Pretraining**:  
+1. **Full Dataset Exploration**:  
+   For research that does not require separate training and benchmark sets, the complete dataset in `all/`, `all.csv`, or `all.xlsx` may be used. This is useful for exploratory analysis, dataset augmentation, or creating custom training/validation/test splits.
+
+2. **Pretraining**:  
    Use `pretraining_data.csv` (or files in `divided/pretraining/`) to fine-tune an LLM. This step helps the model learn reasoning patterns, definitions, and proof structures characteristic of real analysis problems.
 
-2. **Benchmarking**:  
+3. **Benchmarking**:  
    After fine-tuning, test the model on `benchmark_data.csv` (or files in `divided/benchmark/`) to evaluate how well it has learned to reason rigorously. Scores obtained on these problems provide insights into the model’s ability to generalize and produce logically coherent proofs.
 
-3. **Full Dataset Exploration**:  
-   For research that does not require separate training and benchmark sets, the complete dataset in `all/`, `all.csv`, or `all.xlsx` may be used. This is useful for exploratory analysis, dataset augmentation, or creating custom training/validation/test splits.
 
 ## License
 
