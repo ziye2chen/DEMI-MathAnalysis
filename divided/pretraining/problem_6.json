@@ -1,0 +1,5 @@
+{
+    "problem": "The limit\n\\[\n\\gamma = \\lim_{n \\to \\infty} \\left( 1 + \\frac{1}{2} + \\cdots + \\frac{1}{n} - \\log n \\right) \n= 0.5772156649015328606065120\\ldots\n\\]\nis called Euler's constant or sometimes the Euler-Mascheroni constant. Show that the following series converges to $\\gamma$:\n\\[\n\\frac{1}{2} - \\frac{1}{3} + 2 \\left( \\frac{1}{4} - \\frac{1}{5} + \\frac{1}{6} - \\frac{1}{7} \\right) \n+ 3 \\left( \\frac{1}{8} - \\frac{1}{9} + \\cdots - \\frac{1}{15} \\right) + \\cdots.\n\\]",
+    "problem_type": "Infinite Series",
+    "solution": "For brevity put\n\\[\n\\sigma_n = 1 - \\frac{1}{2} + \\frac{1}{3} - \\cdots + \\frac{1}{2n - 1} - \\log 2\n\\]\nfor any positive integer $n$. It is easily seen that\n\\[\n\\sigma_1 + \\sigma_2 + \\cdots + \\sigma_n = 1 + \\frac{1}{2} + \\cdots + \\frac{1}{2n - 1} - n \\log 2;\n\\]\ntherefore\n\\[\n\\gamma = \\lim_{n \\to \\infty} (\\sigma_1 + \\sigma_2 + \\cdots + \\sigma_n).\n\\]\nWe have Vacca's formula by noticing that $\\sigma_n = \\tau_n + \\tau_{n+1} + \\cdots$, where\n\\[\n\\tau_n = \\frac{1}{2^n} - \\frac{1}{2^n + 1} + \\frac{1}{2^n + 2} - \\cdots - \\frac{1}{2^{n+1} - 1}.\n\\]"
+}

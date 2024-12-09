@@ -1,0 +1,5 @@
+{
+    "problem": "Given two series $\\sum_{n=0}^\\infty a_n$ and $\\sum_{n=0}^\\infty b_n$,\n\\[\n\\sum_{n=0}^\\infty (a_0b_n + a_1b_{n-1} + \\cdots + a_nb_0)\n\\]\nis called the Cauchy product of $\\sum a_n$ and $\\sum b_n$.\nSuppose that $\\sum a_n$ and $\\sum b_n$ converge to $\\alpha$ and $\\beta$ respectively and that the Cauchy product converges to $\\delta$. Show then that $\\alpha \\beta$ is equal to $\\delta$.",
+    "problem_type": "Infinite Series",
+    "solution": "Since $a_n \\to 0$ and $b_n \\to 0$ as $n \\to \\infty$, both power series \n\\[\nf(x) = \\sum_{n=0}^\\infty a_n x^n \\quad \\text{and} \\quad g(x) = \\sum_{n=0}^\\infty b_n x^n\n\\]\nconverge absolutely for $|x| < 1$. Hence the product\n\\[\nf(x)g(x) = \\sum_{n=0}^\\infty (a_0b_n + a_1b_{n-1} + \\cdots + a_nb_0) x^n\n\\]\nalso converges for $|x| < 1$. It follows from Abel's continuity theorem that $f(x)$, $g(x)$, and $f(x)g(x)$ converge to $\\alpha$, $\\beta$, and $\\alpha \\beta$ as $x \\to 1^-$. Thus $\\delta = \\alpha \\beta$.\n"
+}

@@ -1,0 +1,5 @@
+{
+    "problem": "Suppose that a power series \n\\[\nf(x) = \\sum_{n=0}^\\infty a_n x^n\n\\]\nhas the radius of convergence $\\rho > 0$, $n a_n$ converges to $0$ as $n \\to \\infty$, and that $f(x)$ converges to $\\alpha$ as $x \\to \\rho^-$. Show then that\n\\[\n\\sum_{n=0}^\\infty a_n \\rho^n = \\alpha.\n\\]",
+    "problem_type": "Series of Functions",
+    "solution": "As in the previous problems we can assume that $\\rho = 1$. Put\n\\[\ns_n = a_0 + a_1 + \\cdots + a_n.\n\\]\n\nFor any $\\epsilon > 0$ there is a positive integer $N$ such that $n|a_n| < \\epsilon$ for all $n$ greater than $N$. For any $0 < x < 1$ and any $n > N$ we obtain\n\\[\n|s_n - f(x)| \\leq \\sum_{k=1}^n |a_k|(1 - x^k) + \\sum_{k > n} k|a_k| \\frac{x^k}{k}\n\\]\n\\[\n\\leq (1 - x) \\sum_{k=1}^n k|a_k| + \\frac{\\epsilon}{n(1-x)}.\n\\]\n\nSubstituting $x = 1 - 1/n$ we infer that\n\\[\n\\left| s_n - f\\left(1 - \\frac{1}{n}\\right) \\right| \\leq \\frac{|a_1| + 2|a_2| + \\cdots + n|a_n|}{n} + \\epsilon.\n\\]\n\nTherefore the right-hand side can be smaller than $2\\epsilon$ if we take $n$ sufficiently large. This means that $s_n$ converges to $\\alpha$ as $n \\to \\infty$. "
+}

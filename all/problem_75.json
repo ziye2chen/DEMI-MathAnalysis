@@ -1,0 +1,5 @@
+{
+    "problem": "Show that $f \\in C[0,1]$ satisfies \n\\[\n\\int_0^1 x^n f(x) \\, dx = 0\n\\]\nfor all non-negative integers $n$ if and only if $f(x)$ vanishes everywhere on the interval $[0,1]$.",
+    "problem_type": "Approximation by Polynomials",
+    "solution": "For any $\\epsilon > 0$, there exists a polynomial $P(x)$ satisfying $\\lvert f(x) - P(x) \\rvert < \\epsilon$ on the interval $[0,1]$ by Weierstrass' approximation theorem. Letting $M$ be the maximum of $\\lvert f(x) \\rvert$ on $[0,1]$, we get\n\\[\n\\int_0^1 f^2(x) \\, dx = \\int_0^1 (f(x) - P(x)) f(x) \\, dx + \\int_0^1 P(x) f(x) \\, dx,\n\\]\n\\[\n\\leq \\int_0^1 \\lvert f(x) - P(x) \\rvert \\cdot \\lvert f(x) \\rvert \\, dx < \\epsilon M.\n\\]\nSince $\\epsilon$ is arbitrary, we have\n\\[\n\\int_0^1 f^2(x) \\, dx = 0;\n\\]\nhence $f(x)$ vanishes everywhere."
+}

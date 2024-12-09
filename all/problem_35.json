@@ -1,0 +1,5 @@
+{
+    "problem": "Show that the maximum of $\\left| Q^{(n)}(x) \\right|$ over $[-1, 1]$ is equal to $2^n n!$, where\n\\[\nQ(x) = (1 - x^2)^n.\n\\]",
+    "problem_type": "Diﬀerentiation",
+    "solution": "By Cauchy's integral formula we get\n\\[\nQ^{(n)}(x) = \\frac{n!}{2\\pi i} \\int_C \\frac{(1 - z^2)^n}{(z - x)^{n+1}} \\, dz\n\\]\nwhere \\(C\\) is an oriented circle centered at \\(z = x\\) with radius \\(r > 0\\). Hence putting\n\\[\nz = x + re^{i\\theta}\n\\]\nfor \\(0 \\leq \\theta < 2\\pi\\) we obtain\n\\[\nQ^{(n)}(x) = \\frac{n!}{2\\pi} \\int_0^{2\\pi} \\frac{(1 - (x + re^{i\\theta})^2)^n}{r^{n+1} e^{(n+1)i\\theta}} re^{i\\theta} \\, d\\theta\n= \\frac{n!}{2\\pi} \\int_0^{2\\pi} \\frac{(1 - (x + re^{i\\theta})^2)^n}{re^{i\\theta}} \\, d\\theta.\n\\]\n\nThe expression in the parentheses can be written as\n\\[\n\\left( \\frac{1 - x^2}{r} - r \\right) \\cos\\theta - 2x - i \\left( \\frac{1 - x^2}{r} + r \\right) \\sin\\theta.\n\\]\n\nWe now take \\(r = \\sqrt{1 - x^2}\\) for \\(|x| < 1\\) so that \\(|P^{(n)}(x)| \\leq 2^n n!\\). This inequality clearly holds for \\(x = 1\\) and \\(x = -1\\)."
+}

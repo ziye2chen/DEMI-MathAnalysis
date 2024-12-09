@@ -1,0 +1,5 @@
+{
+    "problem": "Show that the convergence of $\\sum_{n=1}^\\infty n a_n$ implies that of $\\sum_{n=1}^\\infty a_n$.",
+    "problem_type": "Infinite Series",
+    "solution": "Put \n\\[\nb_n = a_1 + 2a_2 + \\cdots + n a_n,\n\\]\nand let $M$ be the least upper bound of $|b_n|$. For any $\\epsilon > 0$ and any integers $p, q$ with $p > q > 2M / \\epsilon$, we have\n\\[\n\\left| \\sum_{n=q}^p a_n \\right| = \\left| \\frac{b_q - b_{q-1}}{q} + \\frac{b_{q+1} - b_q}{q+1} + \\cdots + \\frac{b_p - b_{p-1}}{p} \\right|.\n\\]\n\nThis can be written as\n\\[\n\\left| \\sum_{n=q}^p a_n \\right| = \\left| \\frac{-b_{q-1}}{q} + \\left( \\frac{1}{q} - \\frac{1}{q+1} \\right)b_q + \\cdots + \\left( \\frac{1}{p-1} - \\frac{1}{p} \\right)b_{p-1} + \\frac{b_p}{p} \\right|.\n\\]\n\nThis is bounded above as follows:\n\\[\n\\left| \\sum_{n=q}^p a_n \\right| \\leq \\frac{2M}{q},\n\\]\nwhich is clearly less than $\\epsilon$. This is nothing but the Cauchy criterion for the convergence of the series $\\sum a_n$.\n\\qed"
+}

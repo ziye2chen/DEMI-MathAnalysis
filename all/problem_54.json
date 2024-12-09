@@ -1,0 +1,5 @@
+{
+    "problem": "For \\( s > 0 \\), compute\n\\[\n\\int_{0}^\\infty e^{-(x-s/x)^2} \\, dx.\n\\]",
+    "problem_type": "Improper Integrals",
+    "solution": "Let \\( f(s) \\) be the integral in the problem. It is easily seen that\n\\[\ne^{-4s} f(s) = \\int_0^\\infty \\exp\\left(-\\left(x + \\frac{s}{x}\\right)^2\\right) dx.\n\\]\nDifferentiating both sides, we get\n\\[\n\\left(f'(s) - 4f(s)\\right)e^{-4s} = -2 \\int_0^\\infty \\left(1 + \\frac{s}{x^2}\\right) \\exp\\left(-\\left(x + \\frac{s}{x}\\right)^2\\right) dx,\n\\]\nwhere the differentiation under the integral sign is allowed (see the introduction of Chapter 11). Then, by the substitution \\( t = x - s/x \\), we have\n\\[\nf'(s) - 4f(s) = -2 \\int_0^\\infty \\left(1 + \\frac{s}{x^2}\\right) \\exp\\left(-\\left(x + \\frac{s}{x}\\right)^2\\right) dx\n= -2 \\int_{-\\infty}^\\infty e^{-t^2} dt = -2 \\sqrt{\\pi}.\n\\]\n\nSolving this linear differential equation, we get\n\\[\nf(s) = c e^{4s} + \\frac{\\sqrt{\\pi}}{2}\n\\]\nfor some constant \\( c \\). Since \\( 0 < f(s) < (\\sqrt{\\pi}/2)e^{2s} \\), we have \\( c = 0 \\); hence\n\\[\nf(s) = \\frac{\\sqrt{\\pi}}{2}.\n\\]"
+}

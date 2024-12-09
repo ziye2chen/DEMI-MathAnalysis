@@ -1,0 +1,5 @@
+{
+    "problem": "Suppose that $f \\in C^1(0, \\infty)$ is positive. Then show that for an arbitrary constant $a > 1$,\n\\[\n\\liminf_{x \\to \\infty} \\frac{f'(x)}{(f(x))^a} \\leq 0.\n\\]",
+    "problem_type": "Diﬀerentiation",
+    "solution": "Suppose, contrary to the assertion, that there are positive numbers $\\delta$ and $x_0$ satisfying\n\\[\n\\delta < \\frac{f'(x)}{(f(x))^a}\n\\]\nfor any $x > x_0$. Then integrating from $x_0$ to $x$ we have\n\\[\n\\delta(x - x_0) < \\int_{x_0}^x \\frac{f'(t)}{(f(t))^a} dt = \\frac{1}{a-1} \\left( \\frac{1}{(f(x_0))^{a-1}} - \\frac{1}{(f(x))^{a-1}} \\right).\n\\]\nThus\n\\[\n\\frac{1}{(f(x_0))^{a-1}} > \\frac{1}{(f(x))^{a-1}} + (a-1)\\delta(x - x_0) > (a-1)\\delta(x - x_0),\n\\]\nwhere the right-hand side diverges to $\\infty$ together with $x$, giving a contradiction."
+}

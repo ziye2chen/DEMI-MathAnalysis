@@ -1,0 +1,5 @@
+{
+    "problem": "Suppose that \\(f \\in C[0,1]\\) and \\(g \\in C(\\mathbb{R})\\) is a periodic function with period 1. Show then that\n\\[\n\\lim_{n \\to \\infty} \\int_0^1 f(x) g(nx) \\, dx = \\int_0^1 f(x) \\, dx \\int_0^1 g(x) \\, dx.\n\\]",
+    "problem_type": "Integration",
+    "solution": "Without loss of generality we can replace \\( g(x) \\) by \\( g(x) + c \\) for any constant \\( c \\); so we can assume that \\( g(x) \\) is positive. By the periodicity of \\( g \\)\n\\[\n\\int_0^1 f(x) g(nx) \\, dx = \\frac{1}{n} \\int_0^n f\\left(\\frac{y}{n}\\right) g(y) \\, dy\n= \\frac{1}{n} \\sum_{k=0}^{n-1} \\int_k^{k+1} f\\left(\\frac{y}{n}\\right) g(y) \\, dy\n= \\frac{1}{n} \\sum_{k=0}^{n-1} \\int_0^1 f\\left(\\frac{k+s}{n}\\right) g(s) \\, ds.\n\\]\n\nApplying the first mean value theorem to each integral on the right-hand side, the above expression can be written as the product of \\( \\int_0^1 g(s) \\, ds \\) times\n\\[\n\\frac{1}{n} \\sum_{k=0}^{n-1} f\\left(\\frac{k+s_k}{n}\\right)\n\\]\nfor some \\( s_k \\) in the interval \\( (0, 1) \\), which is the Riemann sum converging to \\( \\int_0^1 f(x) \\, dx \\) as \\( n \\to \\infty \\)."
+}

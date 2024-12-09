@@ -1,0 +1,5 @@
+{
+    "problem": "Put \\( \\phi(x) = 1 / \\sqrt{1 + |x|} \\) and \\( \\alpha_{j,n} = (j - 1/2)3^{-n} \\) for \\( 1 \\leq j \\leq 3^n, n \\geq 0 \\).\nUsing the function \\( \\Psi \\), construct an example of everywhere differentiable but nowhere monotone functions.",
+    "problem_type": "Integration",
+    "solution": "Finally we construct an example of everywhere differentiable but nowhere monotone functions. Let\n\\[\nf(x) = \\Psi(x) - \\Psi\\left(x - \\frac{1}{6}\\right)\n\\]\nfor \\( \\frac{1}{6} < x < 1 \\). Since \\( \\alpha_{j,n} - \\frac{1}{6} = \\beta_{k,n} \\) for any \\( k = j - \\frac{3^{n-1} + 1}{2} \\geq 0 \\), we have\n\\[\nf'(\\alpha_{j,n}) = \\Phi(\\alpha_{j,n}) - \\Phi(\\beta_{k,n}) > 0.\n\\]\nSimilarly, since \\( \\beta_{k,n} - \\frac{1}{6} = \\alpha_{j,n} \\) for any \\( j = k - \\frac{3^{n-1} - 1}{2} \\geq 1 \\), we get\n\\[\nf'(\\beta_{k,n}) = \\Phi(\\beta_{k,n}) - \\Phi(\\alpha_{j,n}) < 0.\n\\]\nThus, \\( A \\) and \\( B \\) being dense subsets of \\( [0,1] \\), \\( f(x) \\) is nowhere monotone.\n"
+}

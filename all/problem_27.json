@@ -1,0 +1,5 @@
+{
+    "problem": "Show that there are no continuous functions $f$, $g$, and $h$ defined on $\\mathbb{R}$ satisfying\n\\[\nh(f(x) + g(y)) = xy\n\\]\nfor all points $(x, y)$ in $\\mathbb{R}^2$.",
+    "problem_type": "Continuous Functions",
+    "solution": "If continuous functions $f, g$ and $h$ on $\\mathbb{R}$ satisfy the relation\n\\[\nh(f(x) + g(y)) = xy\n\\]\nfor all $x$ and $y$, the function $h(x)$ must be surjective onto $\\mathbb{R}$ since $xy$ takes all real values. Now if $f(x) = f(x')$, then\n\\[\nx = h(f(x) + g(1)) = h(f(x') + g(1)) = x'.\n\\]\nThus $f(x)$ is one-to-one and hence strictly monotone. Suppose that $f$ is bounded above. The limit of $f(x)$ as $x \\to \\infty$ exists, say $a$. We then see that\n\\[\nh(a + g(1)) = \\lim_{x \\to \\infty} h(f(x) + g(1)) = \\lim_{x \\to \\infty} x = \\infty,\n\\]\na contradiction. Thus $f(x)$ is unbounded above. The similar argument can be applied when $x \\to -\\infty$. Therefore $f$ is one-to-one onto $\\mathbb{R}$. Since\n\\[\nh(f(x) + g(0)) = 0\n\\]\nholds for all $x$, the function $h(x)$ vanishes identically. This is clearly a contradiction."
+}

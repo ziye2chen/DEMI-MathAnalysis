@@ -1,0 +1,5 @@
+{
+    "problem": "Given two series $\\sum_{n=0}^\\infty a_n$ and $\\sum_{n=0}^\\infty b_n$,\n\\[\n\\sum_{n=0}^\\infty (a_0b_n + a_1b_{n-1} + \\cdots + a_nb_0)\n\\]\nis called the Cauchy product of $\\sum a_n$ and $\\sum b_n$.\nGive an example of two convergent series whose Cauchy product is divergent.",
+    "problem_type": "Infinite Series",
+    "solution": "For example, take\n\\[\na_n = b_n = \\frac{(-1)^n}{\\sqrt{n+1}}.\n\\]\nObviously $\\sum a_n$ and $\\sum b_n$ converge. However, we have\n\\[\n\\left|a_0 b_n + a_1 b_{n-1} + \\cdots + a_n b_0\\right| = \\sum_{k=1}^{n+1} \\frac{1}{\\sqrt{k(n+2-k)}}\n\\geq \\sum_{k=1}^{n+1} \\frac{2}{k+n+2-k},\n\\]\nwhich shows the divergence of the Cauchy product, since the last expression is greater than 1.\n"
+}

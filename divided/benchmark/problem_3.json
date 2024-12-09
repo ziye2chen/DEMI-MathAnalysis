@@ -1,0 +1,5 @@
+{
+    "problem": "Suppose that $\\{a_n\\}_{n \\geq 0}$ is a non-negative sequence satisfying\n$$\na_{m+n} \\leq a_m + a_n + C\n$$\nfor all positive integers $m, n$ and some non-negative constant $C$. Show that $a_n / n$ converges as $n \\to \\infty$.",
+    "problem_type": "Sequences and Limits",
+    "solution": "For an arbitrary fixed positive integer $k$ we put $n = qk + r$ with $0 \\leq r < k$. Since $a_n = a_{qk+r} \\leq q(a_k + C) + a_r$, we have\n$$\n\\frac{a_n}{n} \\leq \\frac{a_k + C}{k} + \\frac{a_r}{n}.\n$$\nTaking the limit as $n \\to \\infty$, we get\n$$\n\\limsup_{n \\to \\infty} \\frac{a_n}{n} \\leq \\frac{a_k + C}{k}.\n$$\nThe sequence $a_n / n$ is therefore bounded. Since $k$ is arbitrary, we may conclude that\n$$\n\\limsup_{n \\to \\infty} \\frac{a_n}{n} \\leq \\liminf_{k \\to \\infty} \\frac{a_k}{k},\n$$\nwhich means the convergence of $a_n / n$. \n"
+}

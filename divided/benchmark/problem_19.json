@@ -1,0 +1,5 @@
+{
+    "problem": "Suppose that both \\( f(x) \\) and \\( g(x) \\) are monotone increasing continuous functions defined on \\([0, 1]\\). Show that\n\\[\n\\int_0^1 f(x) \\, dx \\int_0^1 g(x) \\, dx \\leq \\int_0^1 f(x) g(x) \\, dx.\n\\]",
+    "problem_type": "Integration",
+    "solution": "It suffices to show that\n\\[\n\\int_0^1 f(x) \\phi(x) \\, dx \\geq 0\n\\]\nwhere\n\\[\n\\phi(x) = g(x) - \\int_0^1 g(t) \\, dt.\n\\]\nBy the mean value theorem there is a $\\xi \\in (0, 1)$ satisfying\n\\[\ng(\\xi) = \\int_0^1 g(x) \\, dx.\n\\]\nSince $\\phi(x) \\leq 0$ for $0 \\leq x \\leq \\xi$ and $\\phi(x) \\geq 0$ for $\\xi \\leq x \\leq 1$, we have\n\\[\n\\int_0^1 f(x) \\phi(x) \\, dx = \\int_0^\\xi f(x) \\phi(x) \\, dx + \\int_\\xi^1 f(x) \\phi(x) \\, dx\n\\]\n\\[\n\\geq f(\\xi) \\int_0^\\xi \\phi(x) \\, dx + f(\\xi) \\int_\\xi^1 \\phi(x) \\, dx\n\\]\n\\[\n= f(\\xi) \\int_0^1 \\phi(x) \\, dx = 0.\n\\]"
+}

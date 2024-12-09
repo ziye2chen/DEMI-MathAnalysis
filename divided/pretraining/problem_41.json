@@ -1,0 +1,5 @@
+{
+    "problem": "Show that there exists a sequence of polynomials with integral coefficients converging to $f \\in C[0, 1]$ uniformly if $f(0) = f(1) = 0$.",
+    "problem_type": "Approximation by Polynomials",
+    "solution": "The Bernstein polynomial for \\(f\\) defined in \\textbf{Problem 8.1} is\n\\[\nB_n(f; x) = \\sum_{k=1}^{n-1} f\\left(\\frac{k}{n}\\right) \\binom{n}{k} x^k (1-x)^{n-k}.\n\\]\n\nSince \\(f(0) = f(1) = 0\\), if \\(n = p\\) is a prime number, then the binomial coefficient \\(\\binom{p}{k}\\) is clearly a multiple of \\(p\\) for every integer \\(k \\in [1, p)\\). Hence,\n\\[\n\\widetilde{B}_p(f; x) = \\sum_{k=1}^{p-1} \\frac{1}{p} \\binom{p}{k} \\left\\lfloor \\frac{p}{k} \\right\\rfloor f\\left(\\frac{k}{p}\\right) x^k (1-x)^{p-k}\n\\]\nis a polynomial with integral coefficients where \\(\\lfloor x \\rfloor\\) denotes the integral part of \\(x\\). \n\nSince we have\n\\[\n\\left| B_p(f; x) - \\widetilde{B}_p(f; x) \\right| \\leq \\frac{1}{p} \\sum_{k=1}^{p-1} \\binom{p}{k} x^k (1-x)^{p-k} < \\frac{1}{p},\n\\]\nit is clear that \\(\\widetilde{B}_p(f; x)\\) converges also to \\(f(x)\\) uniformly as \\(p \\to \\infty\\).\n"
+}

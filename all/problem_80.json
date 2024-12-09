@@ -1,0 +1,5 @@
+{
+    "problem": "Suppose that $f(x)$ is convex and bounded above on an open interval $(a, b)$. Show then that $f(x)$ is continuous on $(a, b)$.",
+    "problem_type": "Convex Functions",
+    "solution": "Suppose that $f(x) < K$ for some constant $K$. For an arbitrary fixed $y$ in the interval $(a, b)$ and any positive integer $n$, the points $y \\pm n\\delta$ belong to $(a, b)$ for all sufficiently small positive $\\delta$. Of course $\\delta$ depends on $n$. Applying the inequality described in \\textbf{Problem 9.1} to the $n$ points $x_1 = y \\pm n\\delta, x_2 = \\cdots = x_n = y$, we get\n\\[\nf(y \\pm \\delta) \\leq \\frac{f(y \\pm n\\delta) + (n-1)f(y)}{n}\n\\]\nrespectively. Hence we have\n\\[\nf(y + \\delta) - f(y) \\leq \\frac{f(y + n\\delta) - f(y)}{n} \\leq \\frac{K - f(y)}{n}\n\\]\nand\n\\[\nf(y) - f(y - \\delta) \\geq \\frac{f(y) - f(y - n\\delta)}{n} \\geq \\frac{f(y) - K}{n}.\n\\]\n\nSince $f(y) - f(y - \\delta) \\leq f(y + \\delta) - f(y)$ and $n$ is arbitrary, these mean that $f(x)$ is continuous at the point $y$. "
+}

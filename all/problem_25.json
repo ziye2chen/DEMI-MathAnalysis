@@ -1,0 +1,5 @@
+{
+    "problem": "Let $f_n \\in C[a, b]$ be a monotone increasing sequence\n\\[\nf_1(x) \\leq f_2(x) \\leq \\cdots,\n\\]\nwhich converges pointwise to $f(x) \\in C[a, b]$. Show that the convergence is uniform on $[a, b]$.",
+    "problem_type": "Continuous Functions",
+    "solution": "For any $\\epsilon > 0$ define the set\n\\[\nE_n = \\{x \\in [a, b] : |f(x) - f_n(x)| \\geq \\epsilon\\}.\n\\]\n\nThen $\\{E_n\\}$ is a sequence of monotone decreasing compact sets in view of the continuity of $f_n$ and $f$. Suppose now that $E_n$ is not empty for any positive integer $n$. It then follows that\n\\[\n\\bigcap_{n=1}^\\infty E_n \\neq \\emptyset.\n\\]\n\nLet $x_0$ be some point belonging to all the sets $E_n$. But this means that $\\{f_n(x_0)\\}$ does not converge to $f(x_0)$, contrary to the assumption. Thus $E_n$ is empty for all sufficiently large $n$; in other words, $|f(x) - f_n(x)| < \\epsilon$ for any $x \\in [a, b]$. "
+}

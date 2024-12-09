@@ -1,0 +1,5 @@
+{
+    "problem": "Show that\n\\[\n\\lim_{x \\to 1^-} (1-x)^2 \\sum_{n=1}^\\infty \\frac{n x^n}{1 - x^n} = \\frac{\\pi^2}{6}.\n\\]",
+    "problem_type": "Series of Functions",
+    "solution": "Applying \\textbf{Problem 6.4} for \\( f(x) = x / (e^x - 1) \\), we get\n\\[\nh \\sum_{n=1}^\\infty \\frac{n h}{e^{n h} - 1} \\to \\int_0^\\infty \\frac{x \\, dx}{e^x - 1} = \\frac{\\pi^2}{6}\n\\]\nas \\( h \\to 0^+ \\). By the substitution \\( h = -\\log x \\), it holds that \\( h \\) converges to \\( 0^+ \\) if and only if \\( x \\) converges to \\( 1^- \\); hence, using \\( -\\log x \\sim 1 - x \\) as \\( x \\to 1^- \\),\n\\[\n\\lim_{x \\to 1^-} (1 - x)^2 \\sum_{n=1}^\\infty \\frac{n x^n}{1 - x^n}\n= \\lim_{x \\to 1^-} (\\log x)^2 \\sum_{n=1}^\\infty \\frac{n x^n}{1 - x^n}\n= \\lim_{h \\to 0^+} h \\sum_{n=1}^\\infty \\frac{n h}{e^{n h} - 1} = \\frac{\\pi^2}{6}.\n\\]\nNote that the function \\( f(x) = x / (e^x - 1) \\) can be regarded as a continuous function on the interval \\([0, \\infty)\\) if we define \\( f(0) = 1 \\)."
+}

@@ -1,0 +1,5 @@
+{
+    "problem": "Show that $f(x)$ is convex on an interval $I$ if and only if $e^{\\lambda f(x)}$ is convex on $I$ for any positive $\\lambda$.",
+    "problem_type": "Convex Functions",
+    "solution": "Suppose first that $f(x)$ is convex on the interval $I$. Since $e^{\\lambda x}$ is convex and monotone increasing on $\\mathbb{R}$, we have\n\\[\n\\exp\\left(\\lambda f\\left(\\frac{x_1 + x_2}{2}\\right)\\right) \\leq \\exp\\left(\\frac{\\lambda f(x_1) + f(x_2)}{2}\\right) \\leq \\frac{e^{\\lambda f(x_1)} + e^{\\lambda f(x_2)}}{2}\n\\]\nfor any $x_1$ and $x_2$ in $I$. Hence $e^{\\lambda f(x)}$ is convex on $I$.\n\nConversely, suppose that $e^{\\lambda f(x)}$ is convex on $I$ for any positive $\\lambda$. The asymptotic expansions as $\\lambda \\to 0^+$ of both sides of the inequality\n\\[\n\\exp\\left(\\lambda f\\left(\\frac{x_1 + x_2}{2}\\right)\\right) \\leq \\frac{e^{\\lambda f(x_1)} + e^{\\lambda f(x_2)}}{2}\n\\]\ngive\n\\[\n1 + \\lambda f\\left(\\frac{x_1 + x_2}{2}\\right) + O(\\lambda^2) \\leq 1 + \\lambda \\frac{f(x_1) + f(x_2)}{2} + O(\\lambda^2),\n\\]\nfor any $x_1$ and $x_2$ in $I$, which implies the convexity of $f(x)$ on $I$. "
+}

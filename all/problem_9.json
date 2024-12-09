@@ -1,0 +1,5 @@
+{
+    "problem": "Let $E$ be any bounded closed set in the complex plane containing an infinite number of points, and let $M_n$ be the maximum of $|V(x_1, \\dots, x_n)|$ as the points $x_1, \\dots, x_n$ run through the set $E$, where\n$$\nV(x_1, \\dots, x_n) = \\prod_{1 \\leq i < j \\leq n} (x_i - x_j)\n$$\nis the Vandermonde determinant. Show that $M_n^{2/(n(n-1))}$ converges as $n \\to \\infty$.",
+    "problem_type": "Sequences and Limits",
+    "solution": "Let $\\xi_1, \\dots, \\xi_{n+1}$ be the points at which $|V(x_1, \\dots, x_{n+1})|$ attains its maximum $M_{n+1}$. Since\n\\[\n\\frac{V(\\xi_1, \\dots, \\xi_{n+1})}{V(\\xi_1, \\dots, \\xi_n)} = (\\xi_1 - \\xi_{n+1}) \\cdots (\\xi_n - \\xi_{n+1}),\n\\]\nwe have\n\\[\n\\frac{M_{n+1}}{M_n} \\leq |\\xi_1 - \\xi_{n+1}| \\cdots |\\xi_n - \\xi_{n+1}|.\n\\]\n\nApplying the same argument to each point $\\xi_1, \\dots, \\xi_n$, we get $n+1$ similar inequalities whose product gives\n\\[\n\\left( \\frac{M_{n+1}}{M_n} \\right)^{n+1} \\leq \\prod_{i \\neq j} |\\xi_i - \\xi_j| = M_n^2.\n\\]\n\nHence the sequence $M_n^{2/(n(n-1))}$ is monotone decreasing."
+}

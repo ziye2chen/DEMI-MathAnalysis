@@ -1,0 +1,5 @@
+{
+    "problem": "For all non-negative integers $n$, show that\n\\[\n\\int_0^\\infty x^n (\\sin x^{1/4}) \\exp(-x^{1/4}) \\, dx = 0.\n\\]",
+    "problem_type": "Approximation by Polynomials",
+    "solution": "For brevity, put\n\\[\nI_n = \\int_0^\\infty x^n e^{-x} \\sin x \\, dx \\quad \\text{and} \\quad J_n = \\int_0^\\infty x^n e^{-x} \\cos x \\, dx\n\\]\nfor any non-negative integer $n$. By the substitution $t = x^{1/4}$, the given integral in the problem is equal to $4 I_{4n+3}$. By partial integration, we easily get\n\\[\n\\begin{cases}\nI_n = \\frac{n}{2} \\left( I_{n-1} + J_{n-1} \\right), \\\\\nJ_n = \\frac{n}{2} \\left( J_{n-1} - I_{n-1} \\right),\n\\end{cases}\n\\]\nfor any positive integer $n$. Solving these recursion formulae with the initial condition $I_0 = J_0 = 1/2$, we obtain $I_n = 0$ for any integer $n$ satisfying $n \\equiv 3 \\, (\\text{mod} \\, 4)$."
+}

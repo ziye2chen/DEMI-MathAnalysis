@@ -1,0 +1,5 @@
+{
+    "problem": "Show that any $f \\in C^{n+1}[0, 1]$ satisfies\n\\[\n\\max_{0 \\leq x \\leq 1} \\left| f^{(n+1)}(x) \\right| \\geq 4^n n!\n\\]\nif $f(0) = f'(0) = \\cdots = f^{(n)}(0) = f'(1) = \\cdots = f^{(n)}(1) = 0$ and $f(1) = 1$.",
+    "problem_type": "Diﬀerentiation",
+    "solution": "Let\n\\[\nP(x) = x^n + a_{n-1}x^{n-1} + \\cdots + a_0\n\\]\nbe any polynomial with real coefficients. Integrating by parts repeatedly we have\n\\[\n\\int_0^1 P(x) f^{(n+1)}(x) \\, dx = -\\int_0^1 P'(x) f^{(n)}(x) \\, dx = \\cdots = (-1)^n \\int_0^1 P^{(n)}(x) f'(x) \\, dx = (-1)^n n!,\n\\]\nwhere we used \\(f(1) = 1\\). Now taking \\(P\\) as the polynomial attaining the minimum in \\textbf{Problem 5.6}, we get\n\\[\nn! = \\left| \\int_0^1 P(x) f^{(n+1)}(x) \\, dx \\right| \\leq \\max_{0 \\leq x \\leq 1} \\left| f^{(n+1)}(x) \\right| \\int_0^1 |P(x)| \\, dx = \\frac{1}{4^n} \\max_{0 \\leq x \\leq 1} \\left| f^{(n+1)}(x) \\right|.\n\\]"
+}

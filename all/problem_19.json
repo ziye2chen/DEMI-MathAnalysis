@@ -1,0 +1,5 @@
+{
+    "problem": "Suppose that $\\sum_{n=1}^\\infty a_n b_n$ converges for any sequence $\\{b_n\\}$ converging. \nThen show that $\\sum_{n=1}^\\infty a_n$ converges absolutely.",
+    "problem_type": "Infinite Series",
+    "solution": "Without loss of generality, we can assume that $\\{a_n\\}$ is a non-negative sequence, since we can take $-b_n$ instead of $b_n$. Suppose, on the contrary, that the series $\\sum a_n$ diverges to $\\infty$. It follows from the result of \\textbf{Problem 2.7} that\n\\[\n\\sum_{n=1}^\\infty \\frac{a_n}{a_1 + a_2 + \\cdots + a_n} = \\infty,\n\\]\ncontrary to the assumption since\n\\[\nb_n = \\frac{1}{a_1 + a_2 + \\cdots + a_n}\n\\]\nconverges to $0$ as $n \\to \\infty$. \\qed"
+}

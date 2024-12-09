@@ -1,0 +1,5 @@
+{
+    "problem": "Show that\n\\[\n\\int_{0}^\\infty \\frac{e^{-x/s - 1/x}}{x} \\, dx \\sim \\log s\n\\]\nas \\( s \\to \\infty \\).",
+    "problem_type": "Improper Integrals",
+    "solution": "Let \\( I(s) \\) be the improper integral in the problem, which is invariant under the substitution \\( t = s / x \\); hence\n\\[\nI(s) = 2 \\int_{\\sqrt{s}}^\\infty \\frac{e^{-x/s - 1/x}}{x} dx.\n\\]\n\nSince \\( e^{-1/x} = 1 + O(s^{-1/2}) \\) uniformly in \\( x \\geq \\sqrt{s} \\) as \\( s \\to \\infty \\), we have\n\\[\nI(s) = 2 \\left( 1 + O\\left(\\frac{1}{\\sqrt{s}}\\right) \\right) \\int_{\\sqrt{s}}^\\infty \\frac{e^{-x/s}}{x} dx\n= 2 \\left( 1 + O\\left(\\frac{1}{\\sqrt{s}}\\right) \\right) \\int_{s^{-1/2}}^\\infty \\frac{e^{-t}}{t} dt.\n\\]\n\nIntegrating the last integral by parts, we get\n\\[\n\\int_{s^{-1/2}}^\\infty \\frac{e^{-t}}{t} dt = \\left[ e^{-t} \\log t \\right]_{t = s^{-1/2}}^{t = \\infty} + \\int_{s^{-1/2}}^\\infty e^{-t} \\log t \\, dt\n= \\frac{1}{2} \\log s + O(1),\n\\]\nhence \\( I(s) = \\log s + O(1) \\) as \\( s \\to \\infty \\).\n"
+}

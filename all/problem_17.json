@@ -1,0 +1,5 @@
+{
+    "problem": "Show that $\\frac{1}{n} \\sum_{k=1}^n a_k$ converges to $0$ when $\\sum_{n=1}^\\infty \\frac{a_n}{n}$ converges.",
+    "problem_type": "Infinite Series",
+    "solution": "Put\n\\[\n\\frac{a_1}{1} + \\frac{a_2}{2} + \\cdots + \\frac{a_n}{n} = \\alpha + \\epsilon_n \\quad \\text{and} \\quad\n\\sigma_n = \\frac{a_1 + a_2 + \\cdots + a_n}{n},\n\\]\nwhere $\\epsilon_n$ is a sequence converging to $0$.\n\nWe now show that\n\\[\n\\sigma_n = \\frac{\\alpha}{n} - \\frac{\\epsilon_1 + \\epsilon_2 + \\cdots + \\epsilon_{n-1}}{n} + \\epsilon_n \\tag{2.3}\n\\]\nby induction on $n$. The case $n=1$ is clear, since $\\sigma_1 = a_1 = \\alpha + \\epsilon_1$. Suppose next that $(2.3)$ holds for $n=m$. We then have\n\\[\n\\sigma_{m+1} = \\frac{m}{m+1} \\sigma_m + \\frac{a_{m+1}}{m+1}\n\\]\n\\[\n= \\frac{m}{m+1} \\left( \\frac{\\alpha}{m} - \\frac{\\epsilon_1 + \\cdots + \\epsilon_{m-1}}{m} + \\epsilon_m \\right) + \\frac{a_{m+1}}{m+1}\n\\]\n\\[\n= \\frac{\\alpha}{m+1} - \\frac{\\epsilon_1 + \\cdots + \\epsilon_m}{m+1} + \\epsilon_{m+1},\n\\]\nas required. Obviously $(2.3)$ implies that $\\sigma_n$ converges to $0$ as $n \\to \\infty$. \\qed"
+}

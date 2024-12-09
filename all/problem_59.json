@@ -1,0 +1,5 @@
+{
+    "problem": "Show that\n\\[\n\\lim_{x \\to 1^-} \\sqrt{1-x} \\sum_{n=1}^\\infty x^{n^2} = \\frac{\\sqrt{\\pi}}{2}.\n\\]",
+    "problem_type": "Series of Functions",
+    "solution": "Applying \\textbf{Problem 6.4} for \\( f(x) = e^{-x^2} \\), we have\n\\[\nh \\sum_{n=0}^\\infty \\exp(-n^2 h^2) \\to \\int_0^\\infty e^{-x^2} dx = \\frac{\\sqrt{\\pi}}{2}\n\\]\nas \\( h \\to 0^+ \\). By the substitution \\( h = \\sqrt{-\\log x} \\), it follows that \\( h \\) converges to \\( 0^+ \\) if and only if \\( x \\) converges to \\( 1^- \\); hence, using \\( -\\log x \\sim 1 - x \\) as \\( x \\to 1^- \\), we obtain\n\\[\n\\lim_{x \\to 1^-} \\sqrt{1 - x} \\sum_{n=0}^\\infty x^{n^2}\n= \\lim_{x \\to 1^-} \\sqrt{-\\log x} \\sum_{n=0}^\\infty x^{n^2}\n= \\lim_{h \\to 0^+} h \\sum_{n=0}^\\infty \\exp(-n^2 h^2) = \\frac{\\sqrt{\\pi}}{2}.\n\\]"
+}

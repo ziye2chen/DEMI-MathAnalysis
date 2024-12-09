@@ -1,0 +1,5 @@
+{
+    "problem": "Suppose that $f(x)$ is convex and continuous on an interval $I$. Show that \n\\[\nf\\left( \\frac{\\lambda_1 x_1 + \\cdots + \\lambda_n x_n}{\\lambda_1 + \\cdots + \\lambda_n} \\right) \n\\leq \n\\frac{\\lambda_1 f(x_1) + \\cdots + \\lambda_n f(x_n)}{\\lambda_1 + \\cdots + \\lambda_n}\n\\]\nfor any $n$ points $x_1, \\dots, x_n$ in $I$ and any positive numbers $\\lambda_1, \\dots, \\lambda_n$.",
+    "problem_type": "Convex Functions",
+    "solution": "By the inequality in \\textbf{Problem 9.1}, it is easily seen that\n\\[\nf\\left(\\frac{k_1x_1 + \\cdots + k_nx_n}{k_1 + \\cdots + k_n}\\right) \\leq \\frac{k_1f(x_1) + \\cdots + k_nf(x_n)}{k_1 + \\cdots + k_n}\n\\]\nfor any points $x_1, \\dots, x_n$ in $I$ and any positive integers $k_1, \\dots, k_n$. For any sufficiently large integer $N$, we take $k_j = \\lfloor \\lambda_j N / (\\lambda_1 + \\cdots + \\lambda_n) \\rfloor$ for each $1 \\leq j \\leq n$. Since\n\\[\n\\frac{k_j}{k_1 + \\cdots + k_n} \\to \\frac{\\lambda_j}{\\lambda_1 + \\cdots + \\lambda_n}\n\\]\nas $N \\to \\infty$, the required inequality follows from the continuity of $f$."
+}

@@ -1,0 +1,5 @@
+{
+    "problem": "Suppose that $\\sum_{n=1}^\\infty a_n b_n$ converges for any sequence $\\{b_n\\}$ such that $\\sum_{n=1}^\\infty b_n^2$ converges. \nThen show that $\\sum_{n=1}^\\infty a_n^2$ also converges.",
+    "problem_type": "Infinite Series",
+    "solution": "Suppose, on the contrary, that $\\sum a_n^2$ diverges to $\\infty$. By the result of \\textbf{Problem 2.7}, we have\n\\[\n\\sum_{n=1}^\\infty \\frac{a_n^2}{(a_1^2 + a_2^2 + \\cdots + a_n^2)^2} < \\infty,\n\\]\ncontrary to the assumption since\n\\[\nb_n = \\frac{a_n}{a_1^2 + a_2^2 + \\cdots + a_n^2}\n\\]\nsatisfies\n\\[\n\\sum_{n=1}^\\infty a_n b_n = \\sum_{n=1}^\\infty \\frac{a_n^2}{a_1^2 + a_2^2 + \\cdots + a_n^2} = \\infty. \\qed"
+}
