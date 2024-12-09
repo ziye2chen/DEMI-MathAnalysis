@@ -21,6 +21,21 @@ By training on DEMI-MathAnalysis, LLMs can move beyond heuristic approximations 
 
 The repository contains both the full dataset and a divided version for distinct pretraining and benchmark sets.
 
+```
+DEMI-MathAnalysis   
+├─ divided
+│ ├─ pretraining
+│ │ └─ ... (files for pretraining split) 
+│ ├─ benchmark
+│ │ └─ ... (files for benchmark split) 
+│ ├─ pretraining_data.csv 
+│ └─ benchmark_data.csv 
+├─ all 
+│ └─ ... (complete dataset files in a single directory) 
+├─ all.csv 
+├─ all.xlsx 
+└─ README.md
+```
 
 ### Key Files and Directories
 
@@ -61,9 +76,23 @@ This dataset is released under the [MIT License](LICENSE), allowing for both aca
 If you find DEMI-MathAnalysis useful in your research, please consider citing our work:
 
 ```bibtex
-@misc{yourwork2024demimathanalysis,
-  title={DEMI-MathAnalysis: A Dataset for Rigorous Proof-Based Reasoning in Mathematical Analysis},
-  author={Your Name and Collaborators},
-  year={2024},
-  howpublished={\url{https://github.com/yourusername/DEMI-MathAnalysis}}
+@book{demidovich1964problems,
+    title={Problems in Mathematical Analysis. Edited by B. Demidovich. Translated From the Russian by G. Yankovsky},
+    author={Demidovich, B.P.},
+    series={Russian Monographs and Texts on Advanced Mathematics and Physics},
+    url={https://books.google.com/books?id=XdmpwgEACAAJ},
+    year={1964},
+    publisher = {Mir Publishers}  
 }
+
+@book{hata2007problems,
+  title={Problems and Solutions in Real Analysis},
+  author={Hata, M.},
+  isbn={9789812776013},
+  lccn={2008295629},
+  series={Series on number theory and its applications},
+  url={https://books.google.com/books?id=vSxkRgQe0AcC},
+  year={2007},
+  publisher={World Scientific}
+}
+```
